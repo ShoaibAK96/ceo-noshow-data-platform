@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+config/config.json
+local_output/
+*.log
+*.sqlite*
+*.xlsx
+.venv/
+.ipynb_checkpoints/

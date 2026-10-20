@@ -1,0 +1,135 @@
+{
+  "settings": {
+    "config_version": "3.1-noshow",
+    "schema": "analytics",
+    "incoming_folder": "Files/Executive_Reporting/NoShow/Incoming",
+    "archive_folder": "Files/Executive_Reporting/NoShow/Archive",
+    "file_log_table": "fact_noshow_file_log",
+    "error_log_table": "fact_noshow_error_log",
+    "audit_columns": [
+      "source_file",
+      "run_id",
+      "load_timestamp"
+    ],
+    "strict_data_types": true,
+    "continue_on_error": true,
+    "archive_on_success": true
+  },
+  "tables": [
+    {
+      "enabled": true,
+      "sheet": "NoshowData",
+      "table": "fact_noshow_data",
+      "header_row": 0,
+      "load_mode": "append",
+      "skip_blank_rows": true,
+      "allow_empty": false,
+      "required_columns": [
+        "report_date",
+        "CLINICID",
+        "DOCTORID",
+        "DOCTORNAME",
+        "APPTDTTM",
+        "APPTID",
+        "APPTNATUREID",
+        "VISITURN",
+        "BOOKINGDT",
+        "SPECIALTYID",
+        "SCHLDDT",
+        "ADMINSVCID",
+        "ADVANCE",
+        "ADVADJUST",
+        "ADVANCEDT",
+        "ADVADJUSTPYBDT"
+      ],
+      "columns": [
+        {
+          "source": "report_date",
+          "target": "report_date",
+          "type": "date",
+          "dayfirst": false
+        },
+        {
+          "source": "CLINICID",
+          "target": "clinic_id",
+          "type": "string"
+        },
+        {
+          "source": "DOCTORID",
+          "target": "doctor_id",
+          "type": "string"
+        },
+        {
+          "source": "DOCTORNAME",
+          "target": "doctor_name",
+          "type": "string"
+        },
+        {
+          "source": "APPTDTTM",
+          "target": "appointment_datetime",
+          "type": "timestamp",
+          "dayfirst": true
+        },
+        {
+          "source": "APPTID",
+          "target": "appointment_id",
+          "type": "string"
+        },
+        {
+          "source": "APPTNATUREID",
+          "target": "appointment_nature_id",
+          "type": "string"
+        },
+        {
+          "source": "VISITURN",
+          "target": "visit_urn",
+          "type": "string"
+        },
+        {
+          "source": "BOOKINGDT",
+          "target": "booking_datetime",
+          "type": "timestamp",
+          "dayfirst": true
+        },
+        {
+          "source": "SPECIALTYID",
+          "target": "specialty_id",
+          "type": "string"
+        },
+        {
+          "source": "SCHLDDT",
+          "target": "scheduled_datetime",
+          "type": "timestamp",
+          "dayfirst": true
+        },
+        {
+          "source": "ADMINSVCID",
+          "target": "admin_service_id",
+          "type": "string"
+        },
+        {
+          "source": "ADVANCE",
+          "target": "advance",
+          "type": "integer"
+        },
+        {
+          "source": "ADVADJUST",
+          "target": "advance_adjust",
+          "type": "string"
+        },
+        {
+          "source": "ADVANCEDT",
+          "target": "advance_datetime",
+          "type": "timestamp",
+          "dayfirst": true
+        },
+        {
+          "source": "ADVADJUSTPYBDT",
+          "target": "advance_adjust_payment_datetime",
+          "type": "timestamp",
+          "dayfirst": true
+        }
+      ]
+    }
+  ]
+}

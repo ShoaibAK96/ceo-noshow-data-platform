@@ -1,0 +1,1 @@
+Report security issues privately to the repository owner. Do not include extracts, credentials or logs in issues. Stop publication and rotate any exposed credential before history cleanup. This repository has no live system connection.

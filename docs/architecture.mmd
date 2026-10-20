@@ -1,0 +1,15 @@
+flowchart TD
+  A["Python: source-preserving TXT collection"] --> B["Power Automate: validate and prepare Excel"]
+  B --> C["Completed server workbook"]
+  B --> X["Invalid or duplicate: exceptions and logs"]
+  C -. "intended integration; deployment unverified" .-> D["Fabric Copy activity and notebook"]
+  D --> E["Validate, type and deduplicate"]
+  E --> F["Delta data, lineage and archive"]
+  E --> G["Failure: scoped rollback and investigation"]
+  F --> H["Final log failure: reconcile data, archive and logs"]
+  classDef implemented fill:#e0f3ee,stroke:#007e80,color:#112d3b
+  classDef pending fill:#fff2dd,stroke:#a85e10,color:#112d3b
+  classDef failure fill:#fbe8eb,stroke:#a33a49,color:#112d3b
+  class A,B,C,E,F implemented
+  class D pending
+  class X,G,H failure

@@ -1,0 +1,19 @@
+{
+  "classification": "reconstructed conceptual design; not an importable Fabric export",
+  "sequence": [
+    {
+      "activity": "Copy",
+      "source": "completed server workbook",
+      "destination": "Lakehouse Incoming",
+      "status": "deployment unverified"
+    },
+    {
+      "activity": "Notebook",
+      "dependency": "copy succeeded",
+      "runtime": "Fabric V3",
+      "status": "source available"
+    }
+  ],
+  "server_cleanup": "only after successful processing and reconciliation policy",
+  "ready_sent_queue": "recommended; deployment not verified"
+}

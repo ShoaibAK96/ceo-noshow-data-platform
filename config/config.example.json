@@ -1,0 +1,18 @@
+{
+  "project_name": "NoShow reference",
+  "source_path": "sample_data",
+  "destination_path": "local_output/incoming",
+  "logs_path": "local_output/logs",
+  "state_database": "local_output/state.sqlite",
+  "file_name_contains": "DEMO-NOSHOWDATA",
+  "allowed_extensions": [
+    ".txt"
+  ],
+  "ignore_prefixes": [
+    "~$",
+    "."
+  ],
+  "minimum_file_age_minutes": 0,
+  "copy_buffer_mb": 1,
+  "overwrite_existing": false
+}

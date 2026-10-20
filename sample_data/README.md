@@ -1,0 +1,1 @@
+Entirely synthetic fixture. Two identical D records demonstrate exact-row deduplication; no real patient, provider or operational record is included. The reference demo does not validate trailer counts; this is explicitly outside its contract.

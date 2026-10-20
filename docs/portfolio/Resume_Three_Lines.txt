@@ -1,0 +1,3 @@
+Built NoShow ingestion components for a hospital CEO Dashboard using Python, Power Automate, Office Scripts and Microsoft Fabric.
+Implemented file collection, pipe-delimited transformation, typed Delta loading, duplicate guards and file/run lineage.
+Developed metadata-driven validation, operational logging, archiving and scoped recovery controls for auditable reporting inputs.

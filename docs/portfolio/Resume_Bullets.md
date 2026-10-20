@@ -1,0 +1,3 @@
+- Built connected NoShow data-ingestion components across Python, Power Automate, Office Scripts and Microsoft Fabric for a hospital CEO Dashboard.
+- Implemented source-preserving file collection, pipe-delimited workbook preparation and metadata-driven PySpark loading with explicit Delta schemas and audit lineage.
+- Added transfer/file duplicate checks, exact-row deduplication, operational logs, archival controls and file/run-scoped recovery logic.

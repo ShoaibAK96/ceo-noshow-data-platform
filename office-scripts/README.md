@@ -1,0 +1,2 @@
+# Office Scripts derivative
+The TypeScript is sanitized from the available original. Filename prefix changed to DEMO-NOSHOWDATA. It requires the ExcelScript runtime. Import into Excel Online and test against a synthetic workbook; local Python tests do not execute ExcelScript. Historical email-related comments do not establish email intake for the documented server-folder flow. No original Power Automate solution export was available.

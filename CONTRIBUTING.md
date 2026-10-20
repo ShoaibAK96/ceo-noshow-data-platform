@@ -1,0 +1,1 @@
+Use a feature branch, synthetic fixtures and focused tests. Public changes must pass confidentiality review. Do not import private operational artifacts into this repository. Open a pull request explaining behavior and validation.
